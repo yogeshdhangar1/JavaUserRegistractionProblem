@@ -3,11 +3,11 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
     static void StringFormat(){
-        System.out.println("Enter The Last Name");
+        System.out.println("Enter The Email Id ");
         Scanner sc = new Scanner(System.in);
-        String lName = sc.next();
-        String CheckFName = "^[A-Z]{1}[a-z]{2,}";
-        boolean valid = Pattern.compile(lName).matcher(CheckFName).matches();
+        String Email = sc.next();
+        String CheckEmailId= ("^[a-z]{3}[.]?[@#$%]{1}[a-z]{2}[.]{1}[a-z]{2}$");
+        boolean valid = Pattern.compile(Email).matcher(CheckEmailId).matches();
         System.out.println(valid);
     }
 
