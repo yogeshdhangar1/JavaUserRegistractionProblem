@@ -3,11 +3,11 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
     static void StringFormat(){
-        System.out.println("Enter The First Name");
+        System.out.println("Enter The Last Name");
         Scanner sc = new Scanner(System.in);
-        String fName = sc.next();
+        String lName = sc.next();
         String CheckFName = "^[A-Z]{1}[a-z]{2,}";
-        boolean valid = Pattern.compile(fName).matcher(CheckFName).matches();
+        boolean valid = Pattern.compile(lName).matcher(CheckFName).matches();
         System.out.println(valid);
     }
 
