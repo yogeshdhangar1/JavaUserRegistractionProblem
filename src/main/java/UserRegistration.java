@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class UserRegistration {
     static void checkPassword() {
-        String nameCondition =  "^(?=.*[A-Z])[a-zA-Z\0-9]{8,}$";
+        String nameCondition =  "^(?=.*[A-Z\0-9])[a-zA-Z\0-9]{8,}$";// Atlest One Nummeric
         Pattern pattern = Pattern.compile(nameCondition);
 
         Scanner sc = new Scanner(System.in);
